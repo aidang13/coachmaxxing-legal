@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Coachmaxxing Privacy Policy</title>
+<meta name="description" content="What Coachmaxxing collects, where it goes, and how to delete it.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders:wght@900&display=swap" rel="stylesheet">
+<style>
+  :root { --bg: #fcfdff; --ink: #0c1630; --ink2: #4b5568; --line: #e3e7ef; --team: #2366cc; --soft: #eef3fc; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #151617; --ink: #f2f4f8; --ink2: #a6adbb; --line: #2b2e33; --team: #6fa4f0; --soft: #1d2533; } }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 720px; margin: 0 auto; padding: 48px 20px 80px; }
+  h1, h2 { font-family: "Big Shoulders", sans-serif; font-weight: 900; text-transform: uppercase; letter-spacing: .01em; line-height: 1.05; }
+  h1 { font-size: 52px; margin: 0 0 8px; }
+  h2 { font-size: 28px; margin: 40px 0 10px; }
+  .sub { color: var(--ink2); margin: 0 0 28px; }
+  .box { background: var(--soft); border-radius: 14px; padding: 18px 20px; }
+  .box ul { margin: 6px 0 0; padding-left: 20px; }
+  ul { padding-left: 22px; }
+  li { margin: 6px 0; }
+  a { color: var(--team); }
+  table { width: 100%; border-collapse: collapse; font-size: 15px; }
+  th, td { text-align: left; padding: 10px 8px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  th { color: var(--ink2); font-weight: 600; }
+  footer { margin-top: 48px; color: var(--ink2); font-size: 14px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Privacy Policy</h1>
+  <p class="sub">Coachmaxxing · Effective October 28, 2026</p>
+
+  <div class="box">
+    <strong>The short version</strong>
+    <ul>
+      <li>You can use Coachmaxxing without an account. Your log then stays on your iPhone.</li>
+      <li>Physique photos and everything in Protocols (medications, doses, phases) never leave your iPhone.</li>
+      <li>If you sign in, your log syncs to our database so it's backed up and works across devices.</li>
+      <li>Meal photos and coach questions are sent to our AI provider to answer them. We don't keep the photos.</li>
+      <li>No ads, no tracking SDKs, and we never sell your data.</li>
+    </ul>
+  </div>
+
+  <h2>What stays on your iPhone</h2>
+  <ul>
+    <li><strong>Physique photos.</strong> Stored in the app's private storage. They are never uploaded or sent to the AI.</li>
+    <li><strong>Protocols.</strong> Medications, injections, doses, sites, supply and phases are stored on the device only, are never synced, and are never sent to the AI. The AI coach only learns the training intensity you choose for a phase ("Push hard", "Steady" or "Ease off") and which week of it you're in, never its name or what you take.</li>
+    <li><strong>Your coach chat history.</strong> Saved on the device. Each message you send is passed to the AI to get a reply (see below).</li>
+    <li><strong>Reminders.</strong> All notifications are scheduled locally on your iPhone. We don't use push notification servers.</li>
+  </ul>
+
+  <h2>What syncs if you sign in</h2>
+  <p>Signing in with Apple or Google creates an account so your data is backed up. We receive the email address Apple or Google shares with us (Apple may give us a private relay address instead). We then store:</p>
+  <ul>
+    <li>Your profile: name or nickname, sex, age, height, weight, training experience, goal and pace, activity level, eating style, allergies, injuries or limits, and the "why" you wrote, if any.</li>
+    <li>Your answer to the setup question about eating and food, which only changes how the coach works with you. It is never shared or used for marketing.</li>
+    <li>Your logs: meals and their nutrition, saved meals, recipes and custom foods, weigh-ins, body measurements, training plans, sessions and personal records, calorie targets and check-in history.</li>
+    <li>How many AI requests you've made each day, to enforce the free limit, and your subscription status.</li>
+  </ul>
+
+  <h2>What's sent to process a request</h2>
+  <table>
+    <tr><th>When you…</th><th>What's sent</th><th>To</th></tr>
+    <tr><td>Scan or describe a meal</td><td>The photo and/or your description</td><td>Our server, then Anthropic (Claude) for the estimate. We don't store the photo.</td></tr>
+    <tr><td>Ask the coach, or have the AI build a plan, recipe or prep week</td><td>Your message plus a summary the app writes: goal, targets, recent adherence, weight trend, diet and limits. With "Hide numbers" or eating support on, it leaves out calories, weights and body fat.</td><td>Our server, then Anthropic</td></tr>
+    <tr><td>Search for a food</td><td>The words you search</td><td>Our database (USDA foods) and Open Food Facts</td></tr>
+    <tr><td>Scan a barcode</td><td>The barcode number only</td><td>Open Food Facts</td></tr>
+  </table>
+  <p>AI requests require an account and go through our server, so your AI provider never receives your email. Anthropic processes requests under its commercial terms and does not use them to train its models.</p>
+
+  <h2>Who processes data for us</h2>
+  <ul>
+    <li><strong>Supabase</strong>: database, sign-in and our server (United States).</li>
+    <li><strong>Anthropic</strong>: AI meal estimates, coaching and plans.</li>
+    <li><strong>RevenueCat</strong>: manages subscriptions using an anonymous ID. Payments are handled by Apple; we never see your card.</li>
+    <li><strong>Apple and Google</strong>: sign-in. Apple also delivers the app, TestFlight builds and any crash reports or feedback you choose to send.</li>
+    <li><strong>Open Food Facts</strong>: packaged food and barcode lookups.</li>
+  </ul>
+  <p>We don't use advertising, analytics or tracking SDKs, and we don't sell or rent your data.</p>
+
+  <h2>Deleting your data</h2>
+  <ul>
+    <li><strong>On your iPhone:</strong> You → Erase everything on this device deletes your log, Protocols and physique photos from the device. Deleting the app does the same.</li>
+    <li><strong>Your account:</strong> email <a href="mailto:gonzalezaidan106@gmail.com">gonzalezaidan106@gmail.com</a> from the address you signed in with and we'll delete your account and everything synced to it within 30 days.</li>
+  </ul>
+
+  <h2>Age and safety</h2>
+  <p>Coachmaxxing is for people 13 and older. Under 18, the app does not offer calorie deficits, contest prep, physique reads or Protocols. Coachmaxxing gives estimates for general fitness, not medical advice, and never recommends medications, drugs or doses.</p>
+
+  <h2>Security</h2>
+  <p>Data is encrypted in transit. Synced data is protected by row-level security, so each account can only read its own records. The AI provider key stays on our server and is never in the app.</p>
+
+  <h2>Changes</h2>
+  <p>If this policy changes, we'll update the date above. For significant changes, we'll tell you in the app.</p>
+
+  <h2>Contact</h2>
+  <p><a href="mailto:gonzalezaidan106@gmail.com">gonzalezaidan106@gmail.com</a></p>
+
+  <footer>Coachmaxxing</footer>
+</main>
+</body>
+</html>
